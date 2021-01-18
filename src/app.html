@@ -1,0 +1,6 @@
+<template>
+    <c-child countdown-label="Next Check In" ontimerstopped={stopPolling} start-timer={startTimer} countdown-interval-minutes="0" countdown-interval-seconds="5"></c-child>
+	<lightning-button onclick={startPolling}  label="Start Polling"></lightning-button>
+	<lightning-button onclick={stopPolling} label="Stop Polling"></lightning-button>
+
+</template>
